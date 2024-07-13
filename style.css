@@ -1,56 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-.container{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.calculator{
-    height: 52.5rem;
-    width: 33.75rem;
-    border: 2px solid burlywood;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10%;
-    background-color: rgba(3, 218, 67, 0.589);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+background-image: url(./1_UJbdi2y0gMEVO6H4YYCgxA.webp);
+background-position: cover;
+
 }
 
-.calculator-Screen{
-    height:15.625rem ;
-    width: 28.75rem;
-    margin: auto;
+.calculator {
+  height: 52.5rem;
+  width: 33.75rem;
+  border: 0.2px burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10%;
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+  padding-bottom: 2rem;
 }
 
-
-.calculator-butons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    margin: auto;
-    font-size: 3.4125rem;
-    gap: 2rem;
-   
+.calculator-Screen {
+  height: 15.625rem;
+  width: 28.75rem;
+  margin: auto;
 }
 
-.content{
-    border-radius: 25%;
-    background-color: coral;
- padding: 0.40rem;
- display: flex;
- justify-content: center;
+.calculator-butons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: auto;
+  font-size: 3.4125rem;
+  gap: 2rem;
 }
 
-
+.content {
+  border-radius: 25%;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
 
 .content17 {
-    grid-column: span 2; 
- 
+  grid-column: span 2;
 }
 
+.content:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.content1,
+.content2,
+.content3 {
+  color: rgb(80, 9, 146);
+}
+
+
+@media (max-width: 514px) {
+    .calculator {
+      width: 90%;
+      height: auto;
+ 
+  
+    }
+  
+    .calculator-Screen {
+      width: 90%;
+      height: 10rem;
+    }
+  
+    .calculator-butons {
+      font-size: 2.875rem;
+      gap: 1rem;
+     
+    }
+  
+    .content {
+      padding: 0.2rem;
+    }
+  }
